@@ -18,10 +18,14 @@ h3 {
 
 /* Header */
 header {
-  text-align: center;
+display:flex;
+justify-content: space-around;
+align-items: center;
+width: 600px;
+text-align: center;
+margin:auto;
 }
 
-/* Containers */
 div {
   background-color: #eae2b7;
   margin: auto;
@@ -40,6 +44,8 @@ article div {
 /* Paragraphs */
 p {
   line-height: 1.5;
+  margin: auto;
+  padding: 5px;
 }
 
 /* Links */
@@ -52,7 +58,7 @@ a:hover {
 }
 
 nav a {
-  padding-left: 20px;
+margin-right:20px;
 }
 
 /* Images */
@@ -75,4 +81,69 @@ footer {
 /* Other page elements */
 hr {
   border: 1px solid black;
+  width: 600px;
 }
+
+.profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px; /* Adjust the gap between image and text */
+}
+
+.profile img {
+  width: 150px; /* Adjust image width */
+  height: auto;
+  border-radius: 50%; /* Display the image in a circular shape */
+}
+
+.intro-text {
+  text-align: left;
+  max-width: 400px; /* Adjust the maximum width of the text container */
+}
+
+.portfolio-projects {
+  display: flex;
+  flex-wrap:nowrap;
+  justify-content: space-between;
+  width: 600px;
+  margin: auto;
+}
+
+.project {
+  flex: 0 0 calc(33.333% - 20px);
+  text-align: center;
+  margin: auto;
+  padding-bottom: 10px;
+}
+
+.project p {
+  font-size: 14px; /* Set the font size for project descriptions */
+}
+
+.portfolio-summary{
+  padding-top: 20px;
+}
+
+
+/* old code below beginning
+
+.project img {
+  max-width: 100%;
+  height: auto;
+}
+
+Containers 
+main {
+  width: 600px;
+  margin:auto;
+}
+
+.about-section {
+  text-align: center; 
+  width: 600px;
+  margin: auto;
+}
+
+old code ending */ 
